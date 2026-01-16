@@ -313,11 +313,51 @@
   display: none;  
 }
 .hero{
-  padding-top:2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
   margin-top: 5rem;
+}
+
+.subheadline {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card {
+  height: auto;
+  padding: 1rem;
+    /* max-width: 28rem; */
+  width: 80%;
+
+}
+
+.cardOptions {
+  flex-wrap: wrap;
+}
+
+.option {
+  width: 100%;
+  justify-content: center;
 }
 .floatingIcons{
   padding:  2rem 0;
 }
+.headline {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.processSteps {
+  gap: 1rem;
+}
+
+.primaryBtn {
+  padding: 0.8rem 0.5rem;
+}
+
 
 }
