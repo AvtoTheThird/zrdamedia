@@ -6,16 +6,18 @@ export default function Header() {
       <div className={styles.logo}>ZrdaMedia</div>
       <nav className={styles.nav}>
         <a href="#Home" className={styles.link}>
-          Home
+          სახლი
         </a>
         <a href="#Services" className={styles.link}>
-          Services
+          სერვისები
         </a>
         <a href="#Contact" className={styles.link}>
-          Contact
+          კონტაქტი
         </a>
       </nav>
-      <button className={styles.cta}>Contact Us</button>
+      <a href="#Contact" className={styles.cta}>
+        დაგვიკავშირდით
+      </a>
     </header>
   );
 }

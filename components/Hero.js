@@ -9,24 +9,24 @@ export default function Hero() {
             <Image src="/ori_kaci.png" width={16.5} height={12} alt="Icon 1" />
           </div>
           <div className={styles.badgeText}>
-            <span>50+ Happy Clients</span>
+            <span>50+ კმაყოფილი კლიენტი</span>
             <span>
-              {`Read `}
+              {`ჭაიკითხე `}
               <a href="#" className={styles.badgeLink}>
-                Our Stories
+                ჩვენი ისტორიები
               </a>
             </span>
           </div>
         </div>
 
         <h1 className={styles.headline}>
-          We Help Brands <br />
-          <span className={styles.highlight}>Grow Online</span>
+          ჩვენ ვეხმარებით ბრენდებს <br />
+          <span className={styles.highlight}>გაიზარდონ ონლაინ</span>
         </h1>
         <hr className={styles.hr} />
         <p className={styles.subheadline}>
-          Strategic social media management, targeted advertising, and
-          data-driven marketing solutions to elevate your digital presence.
+          სოც-მედიის სტრატეგიული მართვა, targeted advertising, and data-driven
+          marketing solutions to elevate your digital presence.
         </p>
 
         <div className={styles.growthBadge}>
@@ -39,16 +39,18 @@ export default function Hero() {
             />
           </div>
           <div className={styles.growthText}>
-            <div className={styles.growthTitle}>Growth Focused</div>
-            <div className={styles.growthSubtitle}>Result that matter</div>
+            <div className={styles.growthTitle}>ზრდაზე ორიენტირებული</div>
+            <div className={styles.growthSubtitle}>
+              შედეგები რომელიც მნიშვნელოვანია
+            </div>
           </div>
         </div>
         <hr className={styles.hr} />
 
         <div className={styles.actions}>
-          <button className={styles.primaryBtn}>Book A Call</button>
+          <button className={styles.primaryBtn}>დაჯავშნე ზარი</button>
           <a href="#" className={styles.secondaryLink}>
-            Explore Our Services →
+            ჩვენი სერვისები →
           </a>
         </div>
       </div>
@@ -67,15 +69,15 @@ export default function Hero() {
         </div>
 
         <div className={styles.processSteps}>
-          <span className={styles.stepPill}>Strategy</span>
+          <span className={styles.stepPill}>დაგეგმე</span>
           <span className={`${styles.stepPill} ${styles.activePill}`}>
-            Execute
+            განახორციელე
           </span>
           <span className={styles.stepPill}>Scale</span>
         </div>
 
         <div className={styles.card}>
-          <div className={styles.cardHeader}>How can we help your grow?</div>
+          <div className={styles.cardHeader}>როგორ შეგვიძლია დაგეხმაროთ?</div>
           <div className={styles.cardOptions}>
             <div className={styles.option}>
               <Image
@@ -99,7 +101,7 @@ export default function Hero() {
         </div>
 
         <div className={styles.platforms}>
-          Platforms we work with:
+          ჩვენ ვმუშაობთ პლათფორმებთან:
           <div className={styles.platformIcons}>
             <Image src="/Group.png" width={48} height={48} alt="Icon 1" />
             <Image src="/Group(1).png" width={48} height={48} alt="Icon 1" />
