@@ -1,0 +1,296 @@
+.hero {
+  background: linear-gradient(100deg, 
+    #0F2A44 10%, 
+    #1A4A77CC 80%, 
+    #2569AACC 100%
+  );
+  color: white;
+  padding: 4rem;
+  border-radius: 2rem;
+  display: grid;
+
+  grid-template-columns: 1fr minmax(28rem, auto);  
+  justify-content: space-between;
+
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 6rem;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.badge {
+  display: flex;
+  align-items: left;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+}
+
+.badgeText {
+  font-size: 0.9rem;
+  align-items: left;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.badgeIcon {
+  background: white;
+  color: var(--primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.badgeLink {
+  text-decoration: underline;
+}
+
+.headline {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.subheadline {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--gray-200);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 95%;
+}
+
+.growthBadge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  /* margin-bottom: 2.5rem; */
+}
+
+.growthText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.growthIcon {
+  background: white;
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.growthTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.growthSubtitle {
+  font-size: 0.8rem;
+  color: var(--gray-500); /* Wait, on dark bg? */
+  color: var(--gray-200);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.primaryBtn {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.primaryBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+.secondaryLink {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secondaryLink:hover {
+  text-decoration: underline;
+}
+
+/* Right side visuals */
+.visuals {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.floatingIcons {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.iconCircle {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  margin-left: -10px; /* overlap amount */
+}
+.iconCircle:first-child {
+  margin-left: 0;
+}
+.processSteps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.stepPill {
+  position: relative;
+  background: #EBEDEE;
+  color: #6A6A66;
+  padding: 0.8rem 1.1rem;
+  border-radius: 2rem;
+  /* font-weight: 600; */
+  z-index: 1;
+    font-size: 0.9rem;
+
+}
+
+/* Draw line only after each pill except the last */
+.stepPill:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -40px;        /* distance to next pill */
+  width: 40px;        /* length of connector */
+  height: 2px;
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.activePill {
+  background: var(--primary);
+  color: white;
+  border: 1px solid #EBEDEE80;
+}
+
+.card {
+  background: #EBEDEE;
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 9rem;
+  max-width: 28rem;
+  color: var(--foreground);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+
+.cardOptions {
+  display: flex;
+  gap: 1rem;
+}
+
+.option {
+  width: 9.8rem;
+  color:#6A6A66;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #D8D9DA;
+}
+
+.platforms {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--gray-200);
+}
+
+.platformIcons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+  }
+  
+  .content {
+    margin: 0 auto;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+  
+  .growthBadge {
+    justify-content: center;
+  }
+}
+.hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    #2569AA 0%,
+    #2569AA 80%,
+    transparent 100%
+  );
+}

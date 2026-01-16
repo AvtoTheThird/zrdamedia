@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: transparent; /* Or match hero bg if it overlaps */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary); /* Or white if on dark hero */
+}
+
+/* Wait, looking at the design, the header is on a light background ABOVE the dark hero? 
+   No, looking at the image, the header seems to be on a light background at the very top, 
+   OR it's on the dark hero.
+   Let me re-examine the image.
+   The top bar has "ZrdaMedia" in blue, and links "Home Services Contact" in black/dark gray.
+   And a blue "Contact Us" button.
+   So it's on a white/light background, separate from the dark hero section below it.
+   
+   Wait, looking closely at the top of the image...
+   There is a white bar at the top with the logo and nav.
+   THEN the dark blue hero section starts.
+   
+   So header background should be white or transparent on white.
+*/
+
+.logo {
+  color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  gap: 4rem;
+
+}
+
+.link {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.cta {
+  background-color: var(--primary);
+  color: white;
+  width: 8.5rem;
+  height: 3rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.cta:hover {
+  background-color: var(--primary-hover);
+}
