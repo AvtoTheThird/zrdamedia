@@ -5,7 +5,9 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.content}>
         <div className={styles.badge}>
-          <Image src="/Frame 2610308.png" width={32} height={32} alt="Icon 1" />
+          <div className={styles.iconBubble}>
+            <Image src="/ori_kaci.png" width={16.5} height={12} alt="Icon 1" />
+          </div>
           <div className={styles.badgeText}>
             <span>50+ Happy Clients</span>
             <span>
@@ -28,7 +30,14 @@ export default function Hero() {
         </p>
 
         <div className={styles.growthBadge}>
-          <Image src="/Frame 2610306.png" width={48} height={48} alt="Icon 1" />
+          <div className={styles.iconBubble}>
+            <Image
+              src="/finance_mode(1).png"
+              width={19}
+              height={19}
+              alt="Icon 1"
+            />
+          </div>
           <div className={styles.growthText}>
             <div className={styles.growthTitle}>Growth Focused</div>
             <div className={styles.growthSubtitle}>Result that matter</div>

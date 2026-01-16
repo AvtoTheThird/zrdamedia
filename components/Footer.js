@@ -60,7 +60,7 @@ export default function Footer() {
             <h4 className={styles.colTitle}>Contact</h4>
             <ul className={styles.list}>
               <li>
-                <a href="#">hello@zrdamedia.com</a>
+                <a href="#">Zrdamedia2@gmail.com</a>
               </li>
               <li>
                 <a href="#">+1 (234) 567-890</a>

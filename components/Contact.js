@@ -55,9 +55,7 @@ export default function Contact() {
               <div className={styles.icon}>📧</div>
               <div>
                 <div className={styles.contactLabel}>Email</div>
-                <div className={styles.contactValue}>
-                  Hello.Zrdamedia@gmail.com
-                </div>
+                <div className={styles.contactValue}>Zrdamedia2@gmail.com</div>
               </div>
             </div>
 

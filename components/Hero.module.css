@@ -56,6 +56,17 @@
   text-decoration: underline;
 }
 
+.iconBubble {
+  width: 32px;
+  height: 32px;
+  background-color: #EBEDEE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .headline {
   font-size: 4rem;
   line-height: 1.1;
@@ -293,4 +304,19 @@
     #2569AA 80%,
     transparent 100%
   );
+}
+
+
+@media (max-width: 768px) {
+  .badge {
+  display: none;  
+}
+.hero{
+  padding-top:2rem;
+  margin-top: 5rem;
+}
+.floatingIcons{
+  padding:  2rem 0;
+}
+
 }

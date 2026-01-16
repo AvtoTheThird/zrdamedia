@@ -46,11 +46,9 @@
 .icon {
   width: 48px;
   height: 48px;
-  background: var(--gray-100); /* Light blueish gray */
+  background: #F4F6FA;
   color: var(--primary);
-  border-radius: 50%; /* Or rounded square as per design? Design shows circles with icons inside */
-  /* Actually design shows icons inside a light blue circle */
-  background: #EFF6FF; /* Light blue */
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

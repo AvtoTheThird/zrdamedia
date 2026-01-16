@@ -7,10 +7,15 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <main>
+      <section id="Home" style={{ height: 0, scrollMarginTop: "6rem" }} />{" "}
       <Header />
       <Hero />
-      <Services />
-      <Contact />
+      <section id="Services">
+        <Services />
+      </section>
+      <section id="Contact">
+        <Contact />
+      </section>
       <Footer />
     </main>
   );

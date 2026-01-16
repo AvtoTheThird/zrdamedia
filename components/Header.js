@@ -5,13 +5,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>ZrdaMedia</div>
       <nav className={styles.nav}>
-        <a href="#" className={styles.link}>
+        <a href="#Home" className={styles.link}>
           Home
         </a>
-        <a href="#" className={styles.link}>
+        <a href="#Services" className={styles.link}>
           Services
         </a>
-        <a href="#" className={styles.link}>
+        <a href="#Contact" className={styles.link}>
           Contact
         </a>
       </nav>
