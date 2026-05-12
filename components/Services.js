@@ -3,52 +3,44 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "Social Media Management",
-    description:
-      "Build a strong, consistent presence across platforms with content that engages and converts.",
+    title: "პაკეტი I",
+    features: [
+      "12 პოსტი თვეში (კვირაში 3)",
+      "ტექსტის დაწერა",
+      "ვიზუალის დიზაინი",
+      "რეკლამის ბიუჯეტი ცალკე",
+    ],
     icon: "/globe_uk.png",
     width: 26,
     height: 26,
   },
   {
-    title: "Paid Advertising",
-    description:
-      "High-performing ad campaigns on Meta, Google, and TikTok designed to drive measurable ROI.",
+    title: "პაკეტი II",
+    features: [
+      "Facebook + Instagram + TikTok",
+      "16 პოსტი თვეში",
+      "4 Reels და Short ვიდეო",
+      "(პაკეტი 1 სრულად)",
+      "რეკლამის ბიუჯეტი ცალკე.",
+    ],
     icon: "/campaign(2).png",
     width: 26,
     height: 21,
   },
   {
-    title: "Content Creation",
-    description:
-      "Scroll-stopping visuals, videos, and copy tailored to your brand and audience.",
+    title: "პაკეტი III",
+    features: [
+      "ყველა სოციალური პლატფორმა",
+      "20+ პოსტი",
+      "რეკლამის სრული მართვა (Meta + TikTok)",
+      "საიტის აწყობა",
+      "ჩატბოტის დაყენება",
+      "პაკეტი (1,2) სრულად.",
+      "რეკლამის ბიუჯეტი ცალკე.",
+    ],
     icon: "/smart_display.png",
     width: 26,
     height: 21,
-  },
-  {
-    title: "Brand Strategy",
-    description:
-      "Define your brand's voice, positioning, and message to stand out in a crowded market.",
-    icon: "/explore.png",
-    width: 26,
-    height: 26,
-  },
-  {
-    title: "Influencer Marketing",
-    description:
-      "Partner with creators that align with your brand to build trust and reach new audiences.",
-    icon: "/group_add.png",
-    width: 32,
-    height: 21,
-  },
-  {
-    title: "Analytics & Growth",
-    description:
-      "Track performance, optimize campaigns, and scale what works using real data.",
-    icon: "/bar_chart_4_bars.png",
-    width: 26,
-    height: 24,
   },
 ];
 
@@ -74,7 +66,11 @@ export default function Services() {
               />
             </div>
             <h3 className={styles.cardTitle}>{service.title}</h3>
-            <p className={styles.cardDesc}>{service.description}</p>
+            <ul className={styles.cardFeatures}>
+              {service.features.map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ul>
             <a href="#" className={styles.link}>
               Learn More →
             </a>

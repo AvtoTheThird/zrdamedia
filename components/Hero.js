@@ -24,10 +24,6 @@ export default function Hero() {
           <span className={styles.highlight}>გაიზარდონ ონლაინ</span>
         </h1>
         <hr className={styles.hr} />
-        <p className={styles.subheadline}>
-          სოც-მედიის სტრატეგიული მართვა, targeted advertising, and data-driven
-          marketing solutions to elevate your digital presence.
-        </p>
 
         <div className={styles.growthBadge}>
           <div className={styles.iconBubble}>
@@ -77,35 +73,22 @@ export default function Hero() {
         </div>
 
         <div className={styles.card}>
-          <div className={styles.cardHeader}>როგორ შეგვიძლია დაგეხმაროთ?</div>
-          <div className={styles.cardOptions}>
-            <div className={styles.option}>
-              <Image
-                src="/campaign_gray.png"
-                width={20}
-                height={18}
-                alt="Icon 1"
-              />
-              Social Media
-            </div>
-            <div className={styles.option}>
-              <Image
-                src="/finance_gray.png"
-                width={18}
-                height={18}
-                alt="Icon 1"
-              />
-              Social Media
-            </div>
-          </div>
+          <p className={styles.subheadline}>
+            სოც-მედიის სტრატეგიული მართვა, targeted advertising, and data-driven
+            marketing solutions to elevate your digital presence.
+          </p>
         </div>
 
         <div className={styles.platforms}>
           ჩვენ ვმუშაობთ პლათფორმებთან:
           <div className={styles.platformIcons}>
-            <Image src="/Group.png" width={48} height={48} alt="Icon 1" />
-            <Image src="/Group(1).png" width={48} height={48} alt="Icon 1" />
-            <Image src="/Group(2).png" width={48} height={48} alt="Icon 1" />
+            <a href="https://www.instagram.com/" target="_blank">
+              {" "}
+              <Image src="/Group.png" width={48} height={48} alt="Icon 1" />
+            </a>
+            <a href="https://www.tiktok.com/@zrdamedia/" target="_blank">
+              <Image src="/Group(1).png" width={48} height={48} alt="Icon 1" />
+            </a>
             <Image src="/Group(3).png" width={48} height={48} alt="Icon 1" />
           </div>
         </div>

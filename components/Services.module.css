@@ -63,11 +63,21 @@
   color: var(--foreground);
 }
 
-.cardDesc {
+.cardFeatures {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
   color: var(--gray-500);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
   font-size: 0.95rem;
+}
+
+.cardFeatures li {
+  margin-bottom: 0.35rem;
+}
+
+.cardFeatures li:last-child {
+  margin-bottom: 0;
 }
 
 .link {
